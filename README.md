@@ -1,12 +1,76 @@
-# React + Vite
+# Frigo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Application web React pour gérer les ingrédients de votre frigo et trouver des recettes adaptées.
 
-Currently, two official plugins are available:
+## Fonctionnalités
+- Ajout et suppression d'ingrédients présents dans le frigo
+- Filtrage des recettes selon les ingrédients sélectionnés
+- Consultation du détail d'une recette
+- Ajout et gestion des recettes favorites (persistées en localStorage)
+- Autocomplétion des ingrédients à partir des recettes
+- Navigation fluide entre les pages (SPA avec React Router)
+- Design moderne et responsive
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Pages principales
+- **Index** : Page d'accueil avec CTA vers la Home
+- **Home** : Choix rapide entre ajout d'ingrédients, liste de recettes, favoris
+- **Add** : Ajout d'ingrédients avec autocomplétion
+- **Recipe List** : Liste des recettes filtrées selon les ingrédients
+- **Favorite Recipe** : Liste des recettes favorites
+- **Recipe Detail** : Détail complet d'une recette
 
-## Expanding the ESLint configuration
+## Structure du projet
+```
+frigo/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── add/
+│   │   ├── navigation/
+│   │   ├── recipeList/
+│   ├── context/
+│   │   ├── FrigoContext
+│   ├── pages/
+│   │   ├── AddPage
+│   │   ├── FavoriteRecipePage
+│   │   ├── IndexPage
+│   │   ├── RecipeDetailPage
+│   │   ├── RecipeListPage
+│   ├── App.jsx
+│   ├── App.css
+│   └── main.jsx
+├── package.json
+├── vite.config.js
+├── README.md
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Installation
+
+1. Cloner le dépôt :
+   ```sh
+   git clone https://github.com/maxcorni/frigo.git
+   ```
+2. Installer les dépendances :
+   ```sh
+   npm install
+   ```
+3. Lancer le serveur de développement :
+   ```sh
+   npm run dev
+   ```
+
+## Technologies
+- React
+- React Router
+- Context API
+- Vite
+- CSS Modules
+
+## Auteur
+
+- **Maxime Cornillon** - [MaximeCornillon](https://github.com/maxcorni)
+
+## 📄 Licence
+Projet réalisé dans le cadre pédagogique de **Webecom 2025**. Non destiné à un usage commercial.
+

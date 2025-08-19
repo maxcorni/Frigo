@@ -1,0 +1,18 @@
+<svg class="fridge-icon" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title desc" xmlns="http://www.w3.org/2000/svg">
+    <title id="title">Icône de frigo</title>
+    <desc id="desc">Un réfrigérateur avec un compartiment congélateur en haut, deux poignées et deux petits pieds</desc>
+
+    <!-- Corps + séparation congélateur -->
+    <g fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="40" y="16" width="176" height="224" rx="16" />
+        <line x1="40" y1="96" x2="216" y2="96" />
+    </g>
+
+    <!-- Poignées -->
+    <rect x="60" y="52" width="20" height="32" rx="4" fill="currentColor" />
+    <rect x="60" y="136" width="20" height="56" rx="4" fill="currentColor" />
+
+    <!-- Pieds -->
+    <rect x="64" y="236" width="28" height="8" rx="2" fill="currentColor" />
+    <rect x="164" y="236" width="28" height="8" rx="2" fill="currentColor" />
+</svg>
