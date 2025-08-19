@@ -1,0 +1,79 @@
+/* Ajout styles pour Add.jsx */
+.add-title {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: #333;
+    font-family: "ADLaM", sans-serif;
+}
+
+.add-ingredient-container {
+    margin: 1em 0;
+    width: 100%;
+    max-width: 400px;
+}
+
+.add-ingredient-input {
+    padding: 0.5em;
+    width: 70%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-right: 8px;
+}
+
+.add-ingredient-btn {
+    padding: 0.5em 1em;
+    font-size: 1em;
+}
+
+.add-ingredient-list {
+    list-style: none;
+    background: rgb(255, 255, 255);
+    border-width: 3px 6px 6px 3px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 1);
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1em 0;
+    max-width: 400px;
+    width: 100%;
+}
+
+.add-ingredient-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 8px;
+    padding: 0.5em 1em;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.add-ingredient-remove {
+    background: none;
+    border: none;
+    color: #ff5900;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.add-ingredient-go {
+    margin-top: 16px;
+    font-size: 32px;
+}
+
+.ingredients-list {
+    margin: 12px 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.ingredients-list li {
+    margin-bottom: 4px;
+}
+
+.steps-list {
+    margin: 12px 0;
+    padding-left: 1em;
+}

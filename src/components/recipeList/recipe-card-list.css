@@ -1,0 +1,91 @@
+/* Grid for recipe cards */
+.recipe-card-list-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin: 24px 0;
+}
+
+/* Card style */
+.recipe-card-list-card {
+    position: relative;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 2px solid #eee;
+    width: 170px;
+    padding: 0 0 12px 0;
+    transition: box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.recipe-card-list-card:hover {
+    box-shadow: 0 4px 16px rgba(255, 89, 0, 0.12);
+    border-color: rgba(255, 89, 0, 0.18);
+}
+
+/* Image container for badge overlay */
+.recipe-card-list-img-container {
+    position: relative;
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 16px 16px 0 0;
+}
+.recipe-card-list-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+    display: block;
+}
+
+/* Title */
+.recipe-card-list-title {
+    font-family: "ADLaM", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 12px 0 0 0;
+    color: #222;
+    min-height: 40px;
+    padding: 0 8px;
+}
+
+/* Link style */
+.recipe-card-list-link {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Favorite button */
+.recipe-card-list-fav-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+    z-index: 2;
+    transition: transform 0.1s;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+.recipe-card-list-fav-btn:active {
+    transform: scale(1.1);
+}
+
+/* No recipes message */
+.no-recipes {
+    text-align: center;
+    color: #888;
+    font-size: 1.1em;
+    margin: 32px 0;
+}
