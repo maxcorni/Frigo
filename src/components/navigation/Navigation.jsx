@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 import "./navigation.css";
 import Icon from "../icon/Icon";
+import { useFrigo } from "../../context/FrigoContext";
+
 
 export default function Navigation() {
   const currentPath = location.pathname;
+  const { favorites} = useFrigo();
+  
   return (
     <ul className="navigation">
       <li>
@@ -24,6 +28,7 @@ export default function Navigation() {
         <Link to="/favorite-recipe">
           <button className="icon-btn">
             <Icon name="book" size={24} color={currentPath === "/favorite-recipe" ? "rgba(255, 89, 0, 1)" : "white"} />
+            <span className="fav-count">{favorites.length}</span>
           </button>
         </Link>
       </li>

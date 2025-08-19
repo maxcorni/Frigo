@@ -38,6 +38,7 @@ recipesData.forEach(r => {
 });
 
 export function FrigoProvider({ children }) {
+    
     const [ingredients, setIngredients] = useState(() => {
         const saved = localStorage.getItem("frigo-ingredients");
         return saved ? JSON.parse(saved) : [];
